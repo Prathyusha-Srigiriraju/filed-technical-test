@@ -1,0 +1,135 @@
+<div class="filed-home page2" >
+        <div class="container-fluid">
+            <img class="d2 mobile-top" src="../assets/mobile-top.svg" alt="filed-logo">
+          <div class="row">
+            <div class="col-xs-12 col-lg-6">
+                <div class="filed-logo">
+                    <img style="cursor:pointer;" (click)="navigateHomepage()" src="../assets/filed-logo-01@2x.png" alt="filed-logo">
+                </div>
+          
+                <div class="f-heading">
+                  <h1 class="fbold">Book a demo today and <br> get two weeks for <span>free.</span> Why?</h1>
+                  <h4 class="fsemibold">Because Our AI-Powered Software <br> Will Exceed Your Marketing Goals.</h4>
+                </div>
+      
+                <div class="f-square">
+                    <img src="../assets/dashboard.png" alt="Filed.com">
+                  </div>
+      
+      
+            </div>
+            <div class="col-xs-12 col-lg-6">
+          
+              <div class="form-page posrel">
+
+            <div class="form-top-image2"><img src="../assets/circle2.svg" alt="Filed.com"></div>
+
+            <div class="c1"><img src="../assets/c1.svg" alt="Filed.com"></div>
+
+            <div class="c2"><img src="../assets/c2.svg" alt="Filed.com"></div>
+
+            <div class="c3"><img src="../assets/c3.svg" alt="Filed.com"></div>
+
+                <h2 class="text-center">We’ll be in touch to get your trial <br> set up.</h2>
+
+                <p class="text-center line1 d1">Fill Out Form</p>
+
+                <p class="text-center line1 d2">Fill Out Details</p>
+
+                    <form class="form-group" class="form2" [formGroup]="form2">
+
+                        <div class="form-top-image"><img src="../assets/form-top-image.svg" alt="Filed.com"></div>
+                      <div class="row">
+                          <div class="col-6 col-sm-6 col-lg-6">
+                              <div class="user-input-wrp">
+                                  <input type="text" maxlength="20" (keypress)="spacesnotallowed($event)"  class="inputText form-control"  formControlName="first_name" required/>
+                                  <span class="floating-label">First Name*</span>
+                                  <div class="alert"
+                                  *ngIf="!form2.controls['first_name'].valid && form2.controls['first_name'].touched">
+                                  First Name is required</div>
+                                </div>
+                          </div>
+                          <div class="col-6 col-sm-6 col-xl-6">
+                              <div class="user-input-wrp">
+                              <input type="text" maxlength="20" (keypress)="spacesnotallowed($event)"  class="form-control inputText"  formControlName="last_name" required>
+                              <span class="floating-label">Last Name*</span>
+                              <div class="alert"
+                              *ngIf="!form2.controls['last_name'].valid && form2.controls['last_name'].touched">
+                              Last Name is required</div>
+                            </div>
+                          </div>
+                      </div>
+
+                      <div class="row">
+                          <div class="col-xs-12 col-lg-12">
+                              <div class="user-input-wrp">
+                              <input type="text" maxlength="20" (keypress)="spacesnotallowed($event)"  class="form-control inputText" formControlName="email" required
+                              pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
+                              >
+                              <span class="floating-label">Email*</span>
+                              <div class="alert"
+                              *ngIf="form2.controls['email'].errors && (form2.controls['email'].dirty || form2.controls['email'].touched)">
+                              <div [hidden]="!form2.controls['email'].errors.required">Email Id
+                                  is required</div>
+                              <div [hidden]="!form2.controls['email'].errors.pattern">Email Id
+                                  should be valid</div>
+                                  </div>
+                          </div>
+                          </div>
+                      </div>
+
+                      <div class="row">
+                      <div class="col-xs-12 col-lg-12">
+                          <div class="user-input-wrp">
+                              <input type="text" maxlength="100" (keypress)="spacesnotallowed($event)"  class="form-control inputText"  formControlName="advertising_budget" required>
+                              <span class="floating-label">Monthly Advertising Budget *</span>
+                              <div class="alert"
+                              *ngIf="!form2.controls['advertising_budget'].valid && form2.controls['advertising_budget'].touched">
+                              Budget is required</div>
+                          </div>
+                      </div>
+                      </div>
+
+
+                      <div class="row">
+                          <div class="col-xs-12 col-lg-12">
+                            <div class="form-control">
+                               
+                                <span class="c-right"><input (keypress)="spacesnotallowed($event)"  (keypress)="noletter($event)" maxlength="16" placeholder="40+" type="text" class="form-control" #phone_number  formControlName="phone_number">
+                                  
+                                  <div class="alert"
+                              *ngIf="!form2.controls['phone_number'].valid && form2.controls['phone_number'].touched">
+                              Phone number is required</div>
+                                  
+                                </span>
+
+                                <span class="c-left">
+                                    <select>
+                                        <option>Romania</option>
+                                        <option>Norway</option>
+                                        <option>Spain</option>
+                                    </select>
+                                  </span>
+                            </div>
+                              <!-- <input type="text" class="form-control" #phone_number  formControlName="phone_number"> -->
+                          </div>
+                      </div>
+
+
+                      <div class="row">
+                          <div class="col-xs-12 col-lg-12">
+                              <button class="submit" (click)="submit(form2.value)" type="submit" [disabled]="!form2.valid">GET FREE TRIAL</button>
+                          </div>
+                      </div>
+                                
+                    </form>
+                </div>
+      
+           
+          </div>
+          
+          
+        </div>
+      
+      </div>
+

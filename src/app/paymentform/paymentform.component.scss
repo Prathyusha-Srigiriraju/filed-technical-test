@@ -1,0 +1,112 @@
+.form2 {
+    padding: 0px 70px;
+        .form-control {
+            margin-bottom: 30px;
+        }
+ 
+  }
+
+.page2 .line1 {
+    padding-bottom: 40px;
+}
+
+.page2  .form-page .line1 {
+    padding-bottom: 20px !important;
+}
+
+.page2  .form-page h2 {
+    padding-bottom: 20px;
+}
+
+
+.page2 .submit {margin-top: -5px;}
+
+.user-input-wrp {
+	position: relative;
+	width: 100%;
+}
+.user-input-wrp .inputText{
+	width: 100%;
+	outline: none;
+	border:none;
+	border: 1px solid #DEDEDE;
+ 	box-shadow: none !important;
+}
+.user-input-wrp .inputText:focus{
+	border-color: #008CC9;
+	// border-width: medium medium 2px;
+}
+.user-input-wrp .floating-label {
+	position: absolute;
+	pointer-events: none;
+    top: 9px;
+    font-size: 14px;
+	left: 10px;
+	transition: 0.2s ease all;
+}
+.user-input-wrp input:focus ~ .floating-label,
+.user-input-wrp input:not(:focus):valid ~ .floating-label{
+    top: -20px;
+    left: 10px;
+    font-size: 13px;
+    opacity: 1;
+    background: white;
+    padding: 5px;
+    color: #707070;
+}
+
+
+
+ .c-right{
+    float: right;
+    width: 55%;
+}
+
+.c-left {
+    float: left;
+    width: 40%;
+}
+
+.c-left select {
+    width: 100%;
+    /* height: 48px; */
+    border: 0px none;
+    border-radius: 10px;
+    opacity: 1;
+    background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right;
+    -webkit-appearance: none;
+    background-size: 11px;
+    background-position: right;
+}
+
+
+.c-right input {
+    border-bottom: 1px solid #ced4da;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    right: -6px;
+    top: -1px;
+    position: relative;
+    /* background: transparent; */
+    height: 25px;
+    border-radius: 0px;
+
+}
+
+
+@media(max-width:991px){
+
+    .form2 {
+        padding: 0px 20px;
+    }
+
+    .alert{
+        font-size: 9px;
+    }
+
+    .page2 .form-page .line1 {
+        padding-bottom: 30px !important;
+    }
+
+}

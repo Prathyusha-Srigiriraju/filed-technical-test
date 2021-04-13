@@ -1,0 +1,117 @@
+@import '../../global'; 
+
+
+.f-banner  h3{
+    position: absolute;
+    top: 250px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+}
+
+.f-banner2{
+    padding: 90px 0px;
+}
+
+.f-banner2 h4 {padding-top: 55px;font-size: 32px;color: #000;}
+.f-banner2 li {padding-bottom: 50px;color: #000;font-size: 18px;}
+.f-banner2 li span{line-height: 1.4;}
+.f-banner2  img {width: 35px;float: left;    margin-right: 40px;  }
+.f-banner2 li:last-child {padding-bottom: 0px;}
+
+
+.f-banner3{padding: 90px 0px;background: transparent linear-gradient(180deg, #38CCF5 0%, #3ECCF5 0%, #42CCF5 16%, #36C1EE 38%, #119FD6 62%, #2A97BF 81%, #108ABF 100%) 0% 0% no-repeat padding-box;}
+.profile-image{width: 100px;
+    border-radius: 50%;
+    height: 100px;    background: #b7ced6;}
+
+    .fleft{float: left;}
+    // .fright{float: right;}
+
+.fright p{color: #fff;font-size: 24px;font-weight: 500;padding-left: 100px;}
+.fright span {color: #fff;}
+        .text-middle{color: #FFFFFF;
+            line-height: 1.4;}
+
+
+            .text1{    display: block;
+                padding-left: 125px;
+                padding-top: 30px;}
+
+                .text2 {
+                    display: block;
+    position: relative;
+    top: 3px;
+    left: 24px;
+                }
+
+
+                .b2 {display: table;margin: 0 auto;}
+                .b3 {float: right;}
+
+              
+
+
+                @media(max-width:991px){
+
+        
+                    .f-banner2 .fblue {
+                        color: #008CC9;
+                    }
+                
+                      .f-banner  h3 {
+                        position: static;
+                        text-align: left !important;
+                        padding-left: 30px;
+                        padding-top: 60px;
+                        color: #008CC9;
+                        font-size: 22px;
+                      }
+                      
+                      .f-banner2{
+                        padding: 40px;
+                      }
+
+                      .f-banner2 {
+                        padding: 40px 20px;
+                    }
+
+                    .f-banner2 li{
+                        font-size: 14px;
+                    }
+
+                      .f-banner2 h4 {
+                        padding-top: 0px;
+                        text-align: center;
+                        font-size: 22px;
+                        font-weight: 600;
+                        padding-bottom: 30px;
+                      }
+
+                      .break-line{
+                          display: block;
+                      }
+
+                      .f-banner2 img {
+                        width: 19px;
+                        margin-right: 15px;
+                    }
+
+                    .block1{
+                        margin: 0 auto 40px auto;
+                        display: table;
+                    }
+
+                    .b2{
+                        margin: 0 auto 40px auto; 
+                    }
+
+                    .b3{
+                        margin: 0 auto;
+                        display: table; 
+                        float: none;
+                    }
+                    .f-banner3{
+                        padding: 40px 0px;
+                    }
+                }

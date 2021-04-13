@@ -1,0 +1,18 @@
+footer{
+    background: #595957;
+    padding: 40px 0px;
+    ul {padding-top: 15px;}
+    ul li {display: inline;}
+    ul li:nth-child(6) {padding-left: 40px;}
+    ul:nth-child(1) {
+        width: 85%;float: left;
+        li {padding-right: 50px;}
+    }
+    ul:nth-child(2) {width: 15%;float: left;
+        li {padding-right: 20px;}
+        img { position: relative; top: -4px;}
+    }
+    .cpy {color: #fff;margin-bottom: 0px;padding-top: 15px;}
+    a {color: #fff;}
+}
+

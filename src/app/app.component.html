@@ -1,0 +1,115 @@
+<div class="filed-home"  *ngIf="router.url == '/'">
+  <div class="container-fluid" >
+      <img class="d2 mobile-top" src="../assets/mobile-top.svg" alt="filed-logo">
+    <div class="row">
+      <div class="col-xs-12 col-lg-6">
+          <div class="filed-logo">
+              <img src="../assets/filed-logo-01@2x.png" alt="filed-logo">
+          </div>
+    
+          <div class="f-heading">
+            <h1 class="fbold">Book a demo today and <br> get two weeks for <span>free.</span> Why?</h1>
+            <h4 class="fsemibold">Because Our AI-Powered Software <br> Will Exceed Your Marketing Goals.</h4>
+          </div>
+
+          <div class="f-square">
+              <img src="../assets/dashboard.png" alt="Filed.com">
+            </div>
+
+
+      </div>
+      <div class="col-xs-12 col-lg-6">
+    
+       
+        <div class="form-page posrel">
+
+            <div class="form-top-image2"><img src="../assets/circle2.svg" alt="Filed.com"></div>
+
+            <div class="c1"><img src="../assets/c1.svg" alt="Filed.com"></div>
+
+            <div class="c2"><img src="../assets/c2.svg" alt="Filed.com"></div>
+
+            <div class="c3"><img src="../assets/c3.svg" alt="Filed.com"></div>
+
+           
+                <h2 class="text-center">Let's Start</h2>
+
+                <p class="text-center line1 d1">Fill out the form and we'll get in touch to <br> get your trial set up.</p>
+                <p class="text-center line1 d2">Fill out the form and we'll  <br> get in touch soon.</p>
+
+                      <form class="form1"  [formGroup]="form1">
+
+                          <div class="form-top-image"><img src="../assets/form-top-image.svg" alt="Filed.com"></div>
+                         
+                          <div>
+                              <p class="f500">Do you want to make ads that convert?</p>
+
+                              <label class="label-block l1">Yes
+                                  <input value="Yes" formControlName="convert_Add"  name="convert_Add" required type="radio" checked="checked">
+                                  <span  class="checkmark"></span>
+                                </label>
+
+                                <label class="label-block l2">No
+                                    <input formControlName="convert_Add" name="convert_Add" value="No" type="radio">
+                                    <span class="checkmark"></span>
+                                  </label>
+
+
+                          </div>
+                          <div class="clearfix"></div>
+                        <div style="padding-top: 15px;">
+                            <p class="f500">What's your monthly ad budget?</p>
+                            <select formControlName="budget" required>
+                                <option value="3,000"> 3,000 euros</option>
+                                <option value="2,000"> 2,000 euros</option>
+                                </select>
+                        </div>
+
+                              <button class="submit" (click)="submit(form1.value)" type="submit" [disabled]="!form1.valid" data-toggle="modal" data-target="#exampleModal"> GET STARTED</button>
+
+                        </form>
+
+
+                        <!-- displaying submitted values from statemanagement in a modal --> 
+                     
+                        <div class="modal" tabindex="-1" id="exampleModal"  role="dialog">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title">Submitted Details</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="" *ngFor="let data of showDetails">
+                                        <div style="padding-bottom: 10px;">Do you want to make ads that convert? : <span class="f500">{{data.convert_add}}</span></div>
+                                        <div  style="padding-bottom: 10px;">What's your monthly ad budget? : <span class="f500"> {{data.budget}} </span></div>
+                                      </div>
+                                </div>
+                                <div class="modal-footer">
+                                
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="navigatetoPayment()">Proceed to payment</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+        
+        </div>
+
+     
+    </div>
+    
+    
+  </div>
+
+</div>
+</div>
+
+<router-outlet></router-outlet>
+
+
+  <app-banner></app-banner>
+  <app-footer></app-footer>
+
+

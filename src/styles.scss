@@ -1,0 +1,496 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "global";
+@import '~ngx-toastr/toastr.css';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;400;500;700&display=swap');
+
+body{
+  font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+      color: #000;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      line-height: initial !important;
+  }
+
+  .fbold{
+    font-weight: 700;
+  }
+  .fsemibold{
+    font-weight: 600;
+  }
+  
+  body::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(230,128,117,0.3); 
+    border-radius: 10px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #ddd; 
+  }
+  
+  ol,ul,li,p,h1,h2,h3,h4,h5,h6{margin:0; padding:0;}
+  
+  li{list-style: none;}
+  
+  a{cursor:pointer;}
+  
+  a,a:hover,a:focus{ outline:0px none;text-decoration: none;}
+  
+  h1{font-size:50px;}
+  h2{font-size:45px;}
+  h3{font-size:32px;}
+  h4{font-size:18px;}
+  h5{font-size:14px;}
+  h6{font-size:10px;}
+  
+  .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+    font-weight: normal;
+  }
+  
+  
+  @media (max-width:991px){
+    body{font-size:14px;}
+    h1{font-size:28px;}
+    h2{font-size:24px;}
+    h3{font-size:20px;}
+    h4{font-size:16px;}
+    h5{font-size:14px;}
+    h6{font-size:10px;}
+  }
+  
+  
+   @media(min-width:1500px){
+    .container-fluid{max-width: 1500px;}
+  }
+  
+  figure{margin: 0px;}
+  
+
+  .theme {color: $themecolor;}
+
+  .posrel{
+      position: relative;
+  }
+
+  .f500{
+    font-weight: 500;color:#000;
+  }
+
+  .fblue{
+    color: $themecolor;
+  }
+
+
+  .filed-home{
+    margin-top: 100px;
+}
+
+input:focus{
+    border-color: none  !important;
+    outline: 0;
+    box-shadow: none !important;
+}
+
+.filed-logo {
+
+    img{
+        width: 130px;
+    }
+}
+
+.f-heading{
+    margin-top: 80px;
+    h1{
+        padding-bottom: 40px;
+    }
+    h4{
+        padding-bottom: 74px;
+    }
+    span{
+        color: $themecolor;
+    }
+}
+
+.f-square{
+    img{
+        width: 634px;
+    }
+}
+
+.form-page{
+    width: 550px;
+    background: #FBFBFB 0% 0% no-repeat padding-box;
+    box-shadow: 0px 4px 20px #00000029;
+    border-radius: 30px;
+    opacity: 1;
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+    top: 70px;
+    h2{
+      font-weight: 700;
+      color: #000;
+      font-size: 28px;
+      padding: 100px 0px 50px 0px;
+    }
+    .line1{
+      font-size: 16px;
+      padding-bottom: 50px;
+      color: #000 !important;
+    }
+    .line2{
+      font-size: 16px;
+      padding-left: 50px;
+      color: #000 !important;
+
+    }
+}
+
+.form1{
+  padding: 0px 50px;
+}
+
+.form-top-image{
+  position: absolute;
+  right: -63px;
+  z-index: -1;
+  top: -49px;
+}
+
+
+.submit{
+  width: 100%;
+  height: 48px;
+background: transparent linear-gradient(180deg, var(--unnamed-color-ff6e4e) 0%, var(--unnamed-color-ff6e4e) 100%) 0% 0% no-repeat padding-box;
+background: transparent linear-gradient(180deg, #FF6E4E 0%, #FF6E4E 100%) 0% 0% no-repeat padding-box;
+box-shadow: 0px 4px 8px #00000029;
+border-radius: 8px;
+border: 0px none;
+color: #fff;
+margin-top: 55px;
+transition: 0.5s;
+}
+
+
+.form1 select{
+  width: 100%;
+height: 48px;
+// background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+border: 1px solid #DEDEDE;
+border-radius: 10px;
+opacity: 1;
+background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right;
+-webkit-appearance: none;
+background-size: 11px;
+background-position: 425px 19px;
+}
+
+.form1 button{
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+.submit:disabled{
+  opacity: 0.5;
+}
+
+.form-top-image2 img {
+  width: 300px;
+  position: absolute;
+  z-index: -1;
+  left: -116px;
+  top: -90px;
+}
+
+
+
+.c3 img{
+  position: absolute;
+  top: 220px;
+  left: -150px;
+  width: 80px;
+}
+
+.c2 img {
+  position: absolute;
+  top: 315px;
+  left: -170px;
+  width: 50px;
+}
+
+.c1 img {
+  position: absolute;
+  top: 385px;
+  left: -194px;
+}
+
+#toast-container > div {
+  opacity: 1;
+  width: 300px;
+  margin-top: 40px;
+}
+.toast {
+  font-size: initial !important;
+  border: initial !important;
+  backdrop-filter: blur(0) !important;
+}
+.toast-success {
+  background-color: #51A351 !important;
+}
+.toast-error {
+  background-color: #BD362F !important;
+}
+.toast-info {
+  background-color: #2F96B4 !important;
+}
+.toast-warning {
+  background-color: #F89406 !important;
+}
+
+/* The container */
+.label-block {
+  position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    width: 50%;
+    display: inline-block;
+    font-weight: 600;
+}
+
+select{
+  padding: 0px 0px 0px 15px;
+}
+
+select:focus {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+
+/* Hide the browser's default radio button */
+.label-block input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width:18px;
+  border: 1px solid #707070;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.label-block:hover input ~ .checkmark {
+  background-color: #fff;
+  border: 1px solid #2196F3;
+}
+
+/* When the radio button is checked, add a blue background */
+.label-block input:checked ~ .checkmark {
+  background-color: #fff;
+  border: 1px solid #38CCF5;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.label-block input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.label-block .checkmark:after {
+
+  top: 4px;
+  left: 4px;
+
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #38CCF5;
+}
+
+
+
+/** banner page **/
+
+.f-banner {
+  background: url(assets/banner.svg) no-repeat right;
+height: 535px;
+}
+
+
+.d1 {display: block;}
+.d2 {display: none;}
+
+// responsive starts from here  **//
+
+@media(max-width:1500px){
+.form-top-image2 img {
+  width: 150px;
+  left: -70px;
+  top: -60px;
+}
+
+.c3 img {
+  top: 100px;
+  left: -100px;
+  width: 80px;
+}
+
+.c2 img {
+  top: 200px;
+  left: -110px;
+  width: 50px;
+}
+
+.c1 img {
+    top: 275px;
+    left: -123px;
+}
+
+.container-fluid{
+  padding-right: 40px !important;
+  padding-left: 40px !important;
+}
+
+}
+
+@media(max-width:1300px){
+  .f-square img {
+    width: 400px;
+}
+
+.c1 , .c2 , .c3 {display: none;}
+
+.form-page {width: auto;height: auto;padding-bottom: 20px;}
+
+
+footer ul:nth-child(1) li {
+    padding-right: 30px !important;
+    font-size: 15px !important;
+}
+
+footer ul:nth-child(2) img {
+  width: 14px !important;
+}
+footer ul:nth-child(2) li {
+  padding-right: 13px !important;
+}
+.text-middle br{
+  display: none;
+}
+}
+
+@media(max-width:991px){
+
+.d1 {display: none;}
+.d2 {display: block;}
+
+.container-fluid{
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+}
+
+.filed-logo , .f-square ,  .form-top-image2 img , .form-page h2{display: none;}
+
+.form-page .line1 {color: #008CC9 !important;padding: 35px 0px 35px 0px;margin-bottom: 0px;}
+footer {display: none !important;}
+.f-heading {margin-top: 0px;}
+.filed-home{margin-top: 20px;text-align: center;}
+.f-heading h1{padding-bottom: 20px;}
+.f-heading h4{font-weight: 400;font-size: 20px;padding-bottom: 25px;    }
+.f-heading h1{font-size: 30px;}
+.form-page{ top: 0px;height: auto;margin-bottom: 50px; padding-bottom: 30px;}
+.form-top-image {position: absolute;
+    left: -55px;
+    z-index: -1;
+    bottom: -60px;
+    right: initial;
+    top: initial;
+}
+
+.submit {
+  margin-top: 35px;
+}
+
+
+.f-banner{
+  background: url(assets/m-banner.svg) no-repeat right;
+  height: 200px;
+}
+
+
+.label-block {
+  padding-left: 0px;
+  width: 30%;
+  font-weight: 600;
+  float: left;
+}
+
+.f-heading span{
+  color: #FF6E4E;
+}
+
+.form1 p {text-align: left !important;}
+.form1 {padding: 0px 20px;}
+
+.form1 .f500 , .label-block{
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.submit{
+  font-weight: 600;
+}
+
+.mobile-top{
+  position: absolute;
+  right: -2px;
+  top: 0px;
+}
+
+.mobile-banner{
+  width: auto !important;
+  position: absolute;
+  right: 0px;
+}
+
+}
+
+
+@media(max-width: 650px){
+
+  .form-page{width: auto;    margin: 0px 10px 50px 10px;}
+
+
+}
+
+
+.alert{position: absolute !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  color: red;
+  top: 40px;
+  font-size: 11px;}
